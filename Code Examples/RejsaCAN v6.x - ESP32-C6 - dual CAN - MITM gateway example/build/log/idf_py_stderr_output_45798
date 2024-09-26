@@ -1,0 +1,63 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40803fe8: no_switch at /home/pc/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/portasm.S:412
+[0m
+[0;33m--- 0x42000382: __esp_system_init_fn_init_efuse_check at /home/pc/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m--- 0x42000656: __esp_system_init_fn_init_show_cpu_freq at /home/pc/esp/esp-idf/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m--- 0x42000220: __esp_system_init_fn_init_show_app_info at /home/pc/esp/esp-idf/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m--- 0x42000394: __esp_system_init_fn_init_efuse_show_app_info at /home/pc/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m--- 0x420023f6: __esp_system_init_fn_init_heap at /home/pc/esp/esp-idf/components/heap/heap_caps_init.c:25
+[0m
+[0;33m--- 0x40800000: _vector_table at /home/pc/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40800000: _vector_table at /home/pc/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40800000: _vector_table at /home/pc/esp/esp-idf/components/riscv/vectors_intc.S:54
+0x40800000: _vector_table at /home/pc/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x42000030: __esp_system_init_fn_esp_timer_init_nonos at /home/pc/esp/esp-idf/components/esp_timer/src/esp_timer_init.c:28
+[0m
+[0;33m--- 0x4200647c: __esp_system_init_fn_init_newlib at /home/pc/esp/esp-idf/components/newlib/newlib_init.c:162
+[0m
+[0;33m--- 0x420006ce: __esp_system_init_fn_init_brownout at /home/pc/esp/esp-idf/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m--- 0x420006dc: __esp_system_init_fn_init_newlib_time at /home/pc/esp/esp-idf/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m--- 0x420064f8: __esp_system_init_fn_init_newlib_stdio at /home/pc/esp/esp-idf/components/newlib/newlib_init.c:207
+[0m
+[0;33m--- 0x42006a28: __esp_system_init_fn_init_pthread at /home/pc/esp/esp-idf/components/pthread/pthread.c:76
+[0m
+[0;33m--- 0x420006ec: __esp_system_init_fn_init_flash at /home/pc/esp/esp-idf/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m--- 0x42000376: __esp_system_init_fn_init_efuse at /home/pc/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m--- 0x40803b66: enable_timer_group0_for_calibration at /home/pc/esp/esp-idf/components/esp_hw_support/port/esp32c6/rtc_time.c:277
+[0m
+[0;33m--- 0x42003570: esp_crypto_dpa_set_level at /home/pc/esp/esp-idf/components/esp_hw_support/esp_dpa_protection.c:15
+ (inlined by) esp_crypto_dpa_protection_startup at /home/pc/esp/esp-idf/components/esp_hw_support/esp_dpa_protection.c:22
+[0m
+[0;33m--- 0x40803c88: tlsf_set_rom_patches at /home/pc/esp/esp-idf/components/esp_rom/patches/esp_rom_tlsf.c:250
+[0m
+[0;33m--- 0x42001446: esp_reset_reason_init at /home/pc/esp/esp-idf/components/esp_system/port/soc/esp32c6/reset_reason.c:72
+[0m
+[0;33m--- 0x42001e30: __esp_system_init_fn_esp_hw_stack_guard_init at /home/pc/esp/esp-idf/components/esp_system/hw_stack_guard.c:15
+[0m
+[0;33m--- 0x4200345e: __esp_system_init_fn_esp_sleep_startup_init at /home/pc/esp/esp-idf/components/esp_hw_support/sleep_gpio.c:185
+[0m
+[0;33m--- 0x42004474: __esp_system_init_fn_sleep_clock_startup_init at /home/pc/esp/esp-idf/components/esp_hw_support/sleep_clock.c:44
+[0m
+[0;33m--- 0x42006b3a: __esp_system_init_fn_usb_serial_jtag_conn_status_init at /home/pc/esp/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c:75
+[0m
+[0;33m--- 0x42000708: __esp_system_init_fn_init_disable_rtc_wdt at /home/pc/esp/esp-idf/components/esp_system/startup_funcs.c:143
+[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[1;31m--- Error: device reports readiness to read but returned no data (device disconnected or multiple access on port?)[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0m

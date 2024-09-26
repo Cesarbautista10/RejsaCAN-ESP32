@@ -1,0 +1,141 @@
+[0;32mI (86) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40804114
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1368
+load:0x4086c110,len:0xd10
+load:0x4086e610,len:0x2b78
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4-dev 2nd stage bootloader[0m
+[0;32mI (23) boot: compile time Sep 25 2024 21:30:12[0m
+[0;32mI (23) boot: chip revision: v0.0[0m
+[0;32mI (24) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (24) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (24) boot.esp32c6: SPI Flash Size : 4MB[0m
+[0;32mI (24) boot: Enabling RNG early entropy source...[0m
+[0;32mI (25) boot: Partition Table:[0m
+[0;32mI (25) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (26) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (26) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (27) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (28) boot: End of partition table[0m
+[0;32mI (28) esp_image: segment 0: paddr=00010020 vaddr=42010020 size=02bf4h ( 11252) map[0m
+[0;32mI (31) esp_image: segment 1: paddr=00012c1c vaddr=40800000 size=07490h ( 29840) load[0m
+[0;32mI (39) esp_image: segment 2: paddr=0001a0b4 vaddr=40807490 size=00d14h (  3348) load[0m
+[0;32mI (40) esp_image: segment 3: paddr=0001add0 vaddr=00000000 size=05248h ( 21064) [0m
+[0;32mI (45) esp_image: segment 4: paddr=00020020 vaddr=42000020 size=0d9ach ( 55724) map[0m
+[0;32mI (59) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (59) boot: Disabling RNG early entropy source...[0m
+[0;32mI (60) cpu_start: Unicore app[0m
+V (60) mmap: after coalescing, 1 regions are left[0m
+D (60) cpu_start: Pro cpu up[0m
+D (61) pmu_param: blk_version is less than 3, act dbias not burnt in efuse
+[0m
+D (69) clk: RTC_SLOW_CLK calibration value: 3441459[0m
+V CACHE_ERR: access error intr clr & ena mask is: 0x10
+D (70) cpu_start: calling init function: 0x42000382 on core: 0[0m
+D (70) cpu_start: calling init function: 0x42000656 on core: 0[0m
+[0;32mI (71) cpu_start: Pro cpu start user code[0m
+[0;32mI (71) cpu_start: cpu freq: 160000000 Hz[0m
+D (71) cpu_start: calling init function: 0x42000220 on core: 0[0m
+[0;32mI (72) app_init: Application information:[0m
+[0;32mI (72) app_init: Project name:     twai_v2[0m
+[0;32mI (72) app_init: App version:      8a0ba33[0m
+[0;32mI (72) app_init: Compile time:     Sep 25 2024 21:30:33[0m
+[0;32mI (72) app_init: ELF file SHA256:  ad37f2136...[0m
+[0;32mI (73) app_init: ESP-IDF:          v5.4-dev[0m
+D (73) cpu_start: calling init function: 0x42000394 on core: 0[0m
+[0;32mI (73) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (74) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (74) efuse_init: Chip rev:         v0.0[0m
+D (74) cpu_start: calling init function: 0x420023f6 on core: 0[0m
+V (74) memory_layout: reserved range is 0x42012b60 - 0x42012b80[0m
+D (75) memory_layout: Checking 5 reserved memory ranges:[0m
+D (75) memory_layout: Reserved memory range 0x40800000 - 0x40807490[0m
+D (75) memory_layout: Reserved memory range 0x40807490 - 0x40809080[0m
+D (76) memory_layout: Reserved memory range 0x4087f564 - 0x40880000[0m
+D (76) memory_layout: Reserved memory range 0x50000000 - 0x50000000[0m
+D (77) memory_layout: Reserved memory range 0x50003fe8 - 0x50004000[0m
+D (77) memory_layout: Building list of available memory regions:[0m
+V (77) memory_layout: Examining memory region 0x40800000 - 0x40820000[0m
+V (78) memory_layout: Start of region 0x40800000 - 0x40820000 overlaps reserved 0x40800000 - 0x40807490[0m
+V (78) memory_layout: Start of region 0x40807490 - 0x40820000 overlaps reserved 0x40807490 - 0x40809080[0m
+D (79) memory_layout: Available memory region 0x40809080 - 0x40820000[0m
+V (79) memory_layout: Examining memory region 0x40820000 - 0x40840000[0m
+D (80) memory_layout: Available memory region 0x40820000 - 0x40840000[0m
+V (80) memory_layout: Examining memory region 0x40840000 - 0x40860000[0m
+D (80) memory_layout: Available memory region 0x40840000 - 0x40860000[0m
+V (81) memory_layout: Examining memory region 0x40860000 - 0x4087c610[0m
+D (81) memory_layout: Available memory region 0x40860000 - 0x4087c610[0m
+V (82) memory_layout: Examining memory region 0x4087c610 - 0x40880000[0m
+V (82) memory_layout: End of region 0x4087c610 - 0x40880000 overlaps reserved 0x4087f564 - 0x40880000[0m
+D (82) memory_layout: Available memory region 0x4087c610 - 0x4087f564[0m
+V (83) memory_layout: Examining memory region 0x50000000 - 0x50004000[0m
+V (83) memory_layout: End of region 0x50000000 - 0x50004000 overlaps reserved 0x50003fe8 - 0x50004000[0m
+D (84) memory_layout: Available memory region 0x50000000 - 0x50003fe8[0m
+[0;32mI (84) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (85) heap_init: New heap initialised at 0x40809080[0m
+[0;32mI (85) heap_init: At 40809080 len 00073590 (461 KiB): RAM[0m
+[0;32mI (85) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+D (86) heap_init: New heap initialised at 0x50000000[0m
+[0;32mI (86) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+D (86) cpu_start: calling init function: 0x42000030 on core: 0[0m
+D (87) cpu_start: calling init function: 0x4200647c on core: 0[0m
+D (87) cpu_start: calling init function: 0x420006ce on core: 0[0m
+V (87) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (88) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (88) intr_alloc: Connected src 15 to int 2 (cpu 0)[0m
+D (88) cpu_start: calling init function: 0x420006dc on core: 0[0m
+D (89) cpu_start: calling init function: 0x420064f8 on core: 0[0m
+D (89) cpu_start: calling init function: 0x42006a28 on core: 0[0m
+D (89) cpu_start: calling init function: 0x420006ec on core: 0[0m
+V (90) memspi: raw_chip_id: 164020
+[0m
+V (90) memspi: chip_id: 204016
+[0m
+V (90) memspi: raw_chip_id: 164020
+[0m
+V (90) memspi: chip_id: 204016
+[0m
+D (91) spi_flash: trying chip: generic[0m
+[0;32mI (91) spi_flash: detected chip: generic[0m
+[0;32mI (91) spi_flash: flash io: dio[0m
+D (91) cpu_start: calling init function: 0x42000376 on core: 0[0m
+D (92) cpu_start: calling init function: 0x40803b66[0m
+D (92) cpu_start: calling init function: 0x42003570[0m
+D (92) cpu_start: calling init function: 0x40803c88[0m
+D (92) cpu_start: calling init function: 0x42001446[0m
+D (93) cpu_start: calling init function: 0x42001e30 on core: 0[0m
+D (93) cpu_start: calling init function: 0x4200345e on core: 0[0m
+[0;32mI (93) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (94) sleep: Enable automatic switching of GPIO sleep configuration[0m
+D (94) cpu_start: calling init function: 0x42004474 on core: 0[0m
+D (94) cpu_start: calling init function: 0x42006b3a on core: 0[0m
+D (95) cpu_start: calling init function: 0x42000708 on core: 0[0m
+V (95) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (95) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x40E[0m
+D (96) intr_alloc: Connected src 22 to int 5 (cpu 0)[0m
+D (96) app_start: Starting scheduler on CPU0[0m
+V (96) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (96) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x402[0m
+D (96) intr_alloc: Connected src 57 to int 8 (cpu 0)[0m
+[0;32mI (96) main_task: Started on CPU0[0m
+D (96) heap_init: New heap initialised at 0x4087c610[0m
+[0;32mI (96) main_task: Calling app_main()[0m
+[0;32mI (96) TWAI v2: Booting...[0m
+V (96) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (97) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x802[0m
+D (97) intr_alloc: Connected src 46 to int 9 (cpu 0)[0m
+[0;32mI (97) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (98) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (98) TWAI v2: Driver 0 installed[0m
+[0;32mI (98) TWAI v2: Driver 0 started[0m
+V (99) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): checking args[0m
+V (99) intr_alloc: esp_intr_alloc_intrstatus (cpu 0): Args okay. Resulting flags 0x802[0m
+D (99) intr_alloc: Connected src 47 to int 10 (cpu 0)[0m
+[0;32mI (99) gpio: GPIO[20]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (100) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (100) TWAI v2: Driver 1 installed[0m
+[0;32mI (100) TWAI v2: Driver 1 started[0m
